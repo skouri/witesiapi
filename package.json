@@ -4,16 +4,29 @@
   "description": "WIT ESI API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "nodemon --exec babel-node index.js",
+    "unit-test": "cross-env NODE_ENV=test mocha './api/**/tests/*.js --require babel-core/register --require babel-polyfill --exit",
+    "test": "cross-env NODE_ENV=test mocha --require babel-core/register --require babel-polyfill --reporter mochawesome --exit",
+    "pretest": "eslint *.js ./api/character/*.js"
   },
   "author": "skouri@yahoo.com",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
-    "nodemon": "^1.18.10"
+    "mocha": "^6.1.4",
+    "mochawesome": "^3.1.2",
+    "mockgoose": "^8.0.1",
+    "nodemon": "^1.18.10",
+    "should": "^13.2.3",
+    "sinon": "^7.3.2",
+    "sinon-test": "^2.4.0",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "axios": "^0.18.0",
