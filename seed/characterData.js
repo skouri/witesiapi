@@ -1,7 +1,7 @@
 import characterModel from '../api/character/characterModel';
 
 const characters = [{
-    '_id': 1952558349,
+    '_id': '1952558349',
     'name': 'Jogan Gage',
     'alts': 'Ashalyn, Mingel Gage',
     'last_seen_location': 'Jita IV - IV',
@@ -9,7 +9,7 @@ const characters = [{
     'ship_types': 'Raven, Kestrel'
   },
   {
-    '_id': 1376548045,
+    '_id': '1376548045',
     'name': 'keacte',
     'alts': 'None',
     'last_seen_location': 'Poinen',

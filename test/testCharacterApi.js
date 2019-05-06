@@ -24,7 +24,7 @@ describe('Character API test', function () {
     supertest(app)
         .post('/api/character')
         .send({
-            // _id: 42,
+            "_id": "42",
             "name": "Dumagon",
             "alts": "Drogan, Grohl",
             "last_seen_location": "Black Rise",

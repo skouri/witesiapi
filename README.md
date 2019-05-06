@@ -21,3 +21,7 @@ npm start
 npm run pretest
 npm run unit-test
 npm run test
+
+TODO:
+Sort location list.
+Make alts, last_seen_location, bounty and ship_types editable.
