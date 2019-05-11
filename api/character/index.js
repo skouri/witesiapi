@@ -39,7 +39,7 @@ router.put('/:id', asyncHandler(async (req, res) => {
   const character = await Character.update({
     _id: req.params.id,
   }, req.body, {
-    upsert: false,
+    upsert: true,
   });
   if (!character) return res.sendStatus(404);
   return res.json(200, character);
