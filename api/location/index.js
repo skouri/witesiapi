@@ -25,6 +25,7 @@ router.get('/:characterId', asyncHandler(async (req, res) => {
       return -comparison;
     });
 
+    console.log(JSON.stringify(filtered));
     return res.status(200).json(filtered);
   }));
 
